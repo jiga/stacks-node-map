@@ -32,11 +32,11 @@ function App() {
         return <NavBar/>;
     }
 
-    return <>
+    return <div style={{ backgroundColor: '#212529', height: '100vh' }}>
         <NavBar/>
         <InfoCard network={network} nodes={nodes}/>
         <Map nodes={nodes}/>
-    </>
+    </div>
 }
 
 export default App;

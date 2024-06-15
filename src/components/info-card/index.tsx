@@ -12,17 +12,16 @@ interface Props {
 const InfoCard = (props: Props) => {
     const {network} = props;
     const count = props.nodes.length;
-
+    
     return <div className="info-card">
         <div className="card-content">
             <div className="node-count">
-                <CountUp start={1} end={count} duration={3}/>
+                <CountUp start={1} end={count} duration={2}/>
             </div>
-            <div>online</div>
-            <div>stacks nodes</div>
-            <div className={`network ${network}`}>
+            <div>Total online Stacks nodes</div>
+            {/* <div className={`network ${network}`}>
             <div className="network-label">{network}</div>
-            </div>
+            </div> */}
         </div>
     </div>
 }

@@ -1,5 +1,6 @@
 export interface Node {
     address: string;
+    neighbors: string[];
     location?: {
         lat: number;
         lng: number;
